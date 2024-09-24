@@ -10,6 +10,32 @@ git clone https://github.com/wenxiyanF2023/k8s-mastery.git
 cd k8s-mastery
 ```
 
+## Step 2 Update Dockerfiles
+- `sa-frontend/Dockerfile`
+- Original version
+```
+FROM nginx
+COPY build /usr/share/nginx/html
+```
+
+- Updated version
+```
+FROM node:14 AS build
+WORKDIR /app
+COPY package.json yarn.lock ./
+RUN yarn install
+COPY . ./
+RUN yarn build
+
+FROM nginx:alpine
+COPY --from=build /app/build /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
+```
+
+The updated Dockerfile uses a multi-stage build where the frontend code is compiled inside the Docker container itself. It starts with the node:14 base image to run Node.js commands. The app dependencies are installed (yarn install), and the frontend assets are built with yarn build. This step generates the production-ready static files inside the /app/build directory. The second stage uses nginx:alpine to serve the production-ready frontend files. The built static assets from the first stage (/app/build) are copied into directory /usr/share/nginx/html using the COPY --from=build instruction. The EXPOSE 80 and CMD instructions ensure that NGINX serves the files on port 80.
+
+
 
 ## Step 2 Set Up Docker Images
 I want to make sure to build the images for multiple platforms, as referred to the documentation here: [Build Multi Platforms](https://docs.docker.com/build/building/multi-platform/)
