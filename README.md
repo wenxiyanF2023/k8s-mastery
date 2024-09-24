@@ -4,9 +4,9 @@
 [wyangjessie/sentiment-analysis-frontend](https://hub.docker.com/repository/docker/wyangjessie/sentiment-analysis-frontend/general) 
 
 
-## Step 1 Clone the GitHub Repository
+## Step 1 Fork the [Repository](https://github.com/rinormaloku/k8s-mastery.git) and clone it
 ```
-git clone https://github.com/rinormaloku/k8s-mastery.git
+git clone https://github.com/wenxiyanF2023/k8s-mastery.git
 cd k8s-mastery
 ```
 
