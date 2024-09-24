@@ -1,4 +1,4 @@
-FROM node:14 as build
+FROM node:14 AS build
 WORKDIR /app
 COPY package.json yarn.lock ./
 RUN yarn install
