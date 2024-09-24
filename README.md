@@ -1,7 +1,7 @@
 ## 0. URLs for the Docker Hub images
-[wyangjessie/sentiment-analysis-web-app](https://hub.docker.com/repository/docker/wyangjessie/sentiment-analysis-web-app/general)
-[wyangjessie/sentiment-analysis-logic](https://hub.docker.com/repository/docker/wyangjessie/sentiment-analysis-logic/general)
-[wyangjessie/sentiment-analysis-frontend](https://hub.docker.com/repository/docker/wyangjessie/sentiment-analysis-frontend/general)
+[wyangjessie/sentiment-analysis-web-app](https://hub.docker.com/repository/docker/wyangjessie/sentiment-analysis-web-app/general) \
+[wyangjessie/sentiment-analysis-logic](https://hub.docker.com/repository/docker/wyangjessie/sentiment-analysis-logic/general) \
+[wyangjessie/sentiment-analysis-frontend](https://hub.docker.com/repository/docker/wyangjessie/sentiment-analysis-frontend/general) \
 
 
 ## Step 1 Clone the GitHub Repository
