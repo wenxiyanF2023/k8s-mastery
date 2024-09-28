@@ -4,7 +4,8 @@
 [wyangjessie/sentiment-analysis-logic](https://hub.docker.com/repository/docker/wyangjessie/sentiment-analysis-logic/general) \
 [wyangjessie/sentiment-analysis-frontend](https://hub.docker.com/repository/docker/wyangjessie/sentiment-analysis-frontend/general) 
 
-#### Recording 1: [link](https://drive.google.com/file/d/1VOkkykQ3rCi12__6WnUSHRTKdZW3ydme/view?usp=sharing)
+#### Recording 1: [link1](https://drive.google.com/file/d/1VOkkykQ3rCi12__6WnUSHRTKdZW3ydme/view?usp=sharing)
+#### Recording 2: [link2](https://drive.google.com/file/d/1DTfebngQSXcFaWcVVV18Cdljxvzy8QyS/view?usp=sharing)
 
 ## Step 1 Fork the [Repository](https://github.com/rinormaloku/k8s-mastery.git) and clone it
 ```
